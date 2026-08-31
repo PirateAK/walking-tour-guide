@@ -57,3 +57,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Live user location dot on Leaflet maps */
+.user-marker {
+  background: transparent;
+  border: none;
+}
+.user-marker-dot {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: #2563eb;
+  border: 3px solid #fff;
+  animation: user-pulse 2s ease-out infinite;
+}
+@keyframes user-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(37, 99, 235, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+  }
+}

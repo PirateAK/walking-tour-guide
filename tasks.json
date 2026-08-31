@@ -1,0 +1,32 @@
+[
+  {
+    "content": "[foundation] Design DB schema: users, tours, waypoints (lat/lng + audio/photo), purchases, saved_media",
+    "id": "1",
+    "status": "completed"
+  },
+  {
+    "content": "[foundation] Set up Postgres tables via Neon connector",
+    "id": "2",
+    "status": "completed"
+  },
+  {
+    "content": "[marketplace] Build map browse page: all tours as pins, preview, mock buy/download",
+    "id": "3",
+    "status": "completed"
+  },
+  {
+    "content": "[creator] Build tour creator tool: walk+record route, add audio/photo waypoints, save & publish",
+    "id": "4",
+    "status": "completed"
+  },
+  {
+    "content": "[player] Build tour player: show route on map, play audio/photos by location, save personal media, pause/resume",
+    "id": "5",
+    "status": "completed"
+  },
+  {
+    "content": "[player] Add save/share of completed tours + personal saved media, re-watch capability",
+    "id": "6",
+    "status": "completed"
+  }
+]

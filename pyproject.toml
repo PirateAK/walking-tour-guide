@@ -1,7 +1,7 @@
 [project]
-name = "react-app"
+name = "walking-tour-guide"
 version = "0.1.0"
-description = "React App with FastAPI Backend"
+description = "Walking Tour Guide — a marketplace for creating, buying, and taking self-guided narrated walking tours"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -10,6 +10,8 @@ dependencies = [
     "httpx==0.28.1",
     "python-multipart==0.0.22",
     "watchfiles==1.1.1",
+    "psycopg2-binary>=2.9.12",
+    "sqlalchemy>=2.0.52",
 ]
 
 [tool.uv]

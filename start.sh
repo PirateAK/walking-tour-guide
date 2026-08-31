@@ -8,6 +8,9 @@ VITE_PORT=${APP_PORT:-5173}
 BACKEND_PORT=$((VITE_PORT + 100))
 export VITE_BACKEND_PORT=$BACKEND_PORT
 
+# Neon Auth proxy path — client hits this same-origin path, backend forwards to Neon
+echo "VITE_NEON_AUTH_URL=/api/neon-auth" > .env
+
 # Port conflict guard — active in Workshop sandbox, skipped elsewhere
 if [ -f /usr/local/lib/workshop-devguard.sh ]; then
     source /usr/local/lib/workshop-devguard.sh
